@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Annual Day Celebration",
+    "titleHi": "वार्षिक दिवस समारोह",
+    "date": "March 15, 2024",
+    "dateHi": "15 मार्च, 2024",
+    "description": "The school celebrated its annual day with cultural performances, speeches, and awards ceremony. Students showcased their talents in dance, music, and drama.",
+    "descriptionHi": "स्कूल ने वार्षिक दिवस सांस्कृतिक प्रदर्शनों, भाषणों और पुरस्कार समारोह के साथ मनाया। छात्रों ने नृत्य, संगीत और नाटक में अपनी प्रतिभा का प्रदर्शन किया।"
+  },
+  {
+    "title": "Sports Day",
+    "titleHi": "खेल दिवस",
+    "date": "February 20, 2024",
+    "dateHi": "20 फरवरी, 2024",
+    "description": "Annual sports day featured various athletic events including races, jumps, and team games. Students participated enthusiastically, promoting fitness and teamwork.",
+    "descriptionHi": "वार्षिक खेल दिवस में दौड़, कूद और टीम खेलों सहित विभिन्न एथलेटिक इवेंट्स शामिल थे। छात्रों ने उत्साहपूर्वक भाग लिया, फिटनेस और टीमवर्क को बढ़ावा दिया।"
+  },
+  {
+    "title": "Science Exhibition",
+    "titleHi": "विज्ञान प्रदर्शनी",
+    "date": "January 10, 2024",
+    "dateHi": "10 जनवरी, 2024",
+    "description": "Students displayed innovative science projects and experiments. The event encouraged curiosity and hands-on learning among young minds.",
+    "descriptionHi": "छात्रों ने नवीन विज्ञान परियोजनाओं और प्रयोगों का प्रदर्शन किया। इस आयोजन ने युवा दिमागों में जिज्ञासा और व्यावहारिक सीखने को प्रोत्साहित किया।"
+  },
+  {
+    "title": "Independence Day",
+    "titleHi": "स्वतंत्रता दिवस",
+    "date": "August 15, 2023",
+    "dateHi": "15 अगस्त, 2023",
+    "description": "The school commemorated India's 77th Independence Day with flag hoisting, patriotic songs, and a quiz on national history.",
+    "descriptionHi": "स्कूल ने भारत के 77वें स्वतंत्रता दिवस को ध्वजारोहण, देशभक्ति गीतों और राष्ट्रीय इतिहास पर क्विज के साथ मनाया।"
+  },
+  {
+    "title": "Environmental Awareness Workshop",
+    "titleHi": "पर्यावरण जागरूकता कार्यशाला",
+    "date": "June 5, 2024",
+    "dateHi": "5 जून, 2024",
+    "description": "A workshop on environmental conservation was conducted, focusing on tree planting, waste management, and sustainable practices for students.",
+    "descriptionHi": "पर्यावरण संरक्षण पर एक कार्यशाला आयोजित की गई, जिसमें वृक्षारोपण, अपशिष्ट प्रबंधन और छात्रों के लिए सतत प्रथाओं पर ध्यान केंद्रित किया गया।"
+  }
+]

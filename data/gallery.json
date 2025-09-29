@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop",
+    "alt": "School Classroom",
+    "altHi": "स्कूल कक्षा"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+    "alt": "Students in Class",
+    "altHi": "कक्षा में छात्र"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=400&h=300&fit=crop",
+    "alt": "Science Lab",
+    "altHi": "विज्ञान प्रयोगशाला"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop",
+    "alt": "School Playground",
+    "altHi": "स्कूल खेल का मैदान"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop",
+    "alt": "Art Class",
+    "altHi": "कला कक्षा"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop",
+    "alt": "Library",
+    "altHi": "पुस्तकालय"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    "alt": "Sports Activities",
+    "altHi": "खेल गतिविधियां"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop",
+    "alt": "Cultural Performance",
+    "altHi": "सांस्कृतिक प्रदर्शन"
+  },
+  {
+    "url": "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=300&fit=crop",
+    "alt": "School Assembly",
+    "altHi": "स्कूल सभा"
+  }
+]

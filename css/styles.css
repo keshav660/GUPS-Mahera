@@ -1,0 +1,371 @@
+/* GUPS Mahera Official Website - Custom Styles */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@300;400;600;700&display=swap');
+
+/* Root Variables */
+:root {
+  --primary-color: #4169e1; /* Royal Blue */
+  --secondary-color: #ffd700; /* Gold */
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-blur: blur(10px);
+  --transition: all 0.3s ease;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-light);
+  background-color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.lang-hi {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Section Titles with Gold underline */
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+}
+
+/* Glassmorphism */
+.glassmorphism {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+}
+
+/* Tilt Card */
+.tilt-card {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.tilt-card:hover {
+  transform: rotateX(5deg) rotateY(5deg) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(65, 105, 225, 0.65),   /* Royal Blue */
+    rgba(255, 215, 0, 0.25)     /* Light Gold tint */
+  );
+  z-index: 1;
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.hero h1, .hero p {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Highlight Cards */
+.highlight-card {
+  transition: var(--transition);
+}
+.highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.highlight-card img, 
+.highlight-card video {
+  border-radius: 12px;
+}
+
+/* Navigation */
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.nav-link {
+  font-weight: 500;
+  transition: var(--transition);
+}
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  font-weight: 600;
+}
+.btn-warning:hover {
+  background-color: #e6c200;
+  border-color: #e6c200;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
+}
+
+/* Forms */
+.form-control, .form-select {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-light);
+  border-radius: 8px;
+}
+.form-control:focus, .form-select:focus {
+  background: var(--glass-bg);
+  border-color: var(--secondary-color);
+  color: var(--text-light);
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+.form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Teachers Grid */
+.teacher-card {
+  transition: var(--transition);
+}
+.teacher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Activities Timeline */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: var(--secondary-color);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+}
+
+/* Gallery */
+.gallery-item {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox.show { display: flex; }
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* Notices */
+.notice-item {
+  transition: var(--transition);
+}
+.notice-item:hover {
+  background: var(--glass-bg);
+  transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  background: rgba(0,0,0,0.3);
+  padding: 1rem 0;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.4rem; }
+  .tilt-card:hover { transform: none; }
+  .timeline { padding-left: 20px; }
+  .timeline-item::before { left: -17px; }
+}
+@media (max-width: 576px) {
+  .navbar-brand { font-size: 1.25rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero .btn { padding: 0.75rem 2rem; }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print */
+@media print {
+  body { color: var(--text-dark); background: #fff !important; }
+  .glassmorphism { background: #fff !important; backdrop-filter: none !important; border: 1px solid #ddd !important; }
+  .btn, .navbar, footer { display: none !important; }
+}
+/* Highlights Section */
+section .highlight-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  transition: var(--transition);
+  color: var(--text-light);
+}
+
+section .highlight-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  border-color: var(--secondary-color);
+}
+
+/* Card Image & Video */
+section .highlight-card img,
+section .highlight-card video {
+  border-radius: 12px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  transition: var(--transition);
+}
+
+section .highlight-card:hover img,
+section .highlight-card:hover video {
+  filter: brightness(1.05) contrast(1.05);
+}
+
+/* Card Titles */
+section .highlight-card .card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+  text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Card Text */
+section .highlight-card .card-text {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+  opacity: 0.9;
+}
+
+/* Section Heading */
+section h2 {
+  font-weight: 700;
+  color: var(--text-light);
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background: var(--secondary-color);
+  border-radius: 3px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  section .highlight-card {
+    padding: 1.2rem;
+  }
+  section .highlight-card .card-title {
+    font-size: 1.1rem;
+  }
+  section .highlight-card .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+/* About Page Short Styles */
+main section { padding: 3rem 0; }
+
+main h1, main h2 {
+  font-weight: 700; color: var(--text-light); position: relative; display: inline-block; margin-bottom: 1rem;
+}
+main h1::after, main h2::after {
+  content: ''; position: absolute; left: 50%; bottom: -8px; transform: translateX(-50%);
+  width: 70px; height: 3px; background: var(--secondary-color); border-radius: 3px;
+}
+
+main .glassmorphism {
+  background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 15px; transition: var(--transition);
+}
+main .glassmorphism:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+
+main .glassmorphism p { color: #f0f0f0; opacity: 0.95; line-height: 1.6; }
+
+main img { border-radius: 12px; width: 100%; height: auto; object-fit: cover; transition: var(--transition); }
+main img:hover { transform: scale(1.03); filter: brightness(1.05); }
+
+@media (max-width: 992px) { main .col-lg-8, main .col-lg-4 { margin-bottom: 1.5rem; } }
+@media (max-width: 576px) { main h1 { font-size: 2rem; } main h2 { font-size: 1.5rem; } main .glassmorphism { padding: 1rem; } }
